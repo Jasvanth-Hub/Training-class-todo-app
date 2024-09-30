@@ -6,11 +6,11 @@ function NavbarComponent() {
   return (
     <Navbar bg="primary" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-        <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
+        <Navbar.Brand href="#">Hello there ...</Navbar.Brand>
+        <Nav>
+          <Nav.Link style={{color:"white"}}  href= "/" >Home</Nav.Link>
+          <Nav.Link style={{color:"white"}}  href="/about">About</Nav.Link>
+          <Nav.Link style={{color:"white"}}  href="/contact">Contact Us</Nav.Link>
         </Nav>
       </Container>
     </Navbar>

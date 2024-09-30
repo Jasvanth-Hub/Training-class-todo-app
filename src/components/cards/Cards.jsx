@@ -73,7 +73,9 @@ const Cards = () => {
     <div style={{backgroundColor:"#585a5c",height:"100%"}}>
       <Container className="pt-3 p-2 d-flex flex-column justify-content-center ">
         <InputGroup className="mb-3 d-flex justify-content-center ">
-          <InputGroup.Text id="basic-addon1" value={search}>
+          <InputGroup.Text id="basic-addon1" value={search} onClick={(e)=>{
+            setsearch(e.target.value)
+          }}>
             Search
           </InputGroup.Text>
           <Form.Control
